@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      
+      <div class="illustration">   
+        <picture>
+          <source media="(min-width: 650px)" srcset="images\illustration-woman-online-desktop.svg">
+          <source media="(min-width: 650px)" srcset="images\bg-pattern-desktop.svg">          
+          <source media="(min-width: 650px)" srcset="images\illustration-box-desktop.svg">
+          <img class="ilstrtn1" src="images/illustration-woman-online-mobile.svg" alt="illustration">
+          <img class="ilstrtn2" src="images/bg-pattern-mobile.svg" alt="shadow like pattern">          
+        </picture>             
+      </div>
+
+      <div class="questions-answers">
+        <h1>FAQ</h1>
+        <article class="qna">
+         <div class="questions">
+            <label for="arrow-btn">How many team members can I invite?</label>
+            <button class="down-arrow-btn" id="arrow-btn"><img src="images/icon-arrow-down.svg" alt="down arrow icon"></button> 
+         </div>
+         <div class="answer">
+          <p> You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.</p>
+         </div>         
+        </article>
+        
+        <article class="qna">
+         <div class="questions">
+            <label for="arrow-btn">What is the maximum file upload size?</label>
+            <button class="down-arrow-btn" id="arrow-btn"> <img  src="images/icon-arrow-down.svg" alt="down arrow icon"> </button>
+          </div>
+          <div class="answer">
+            <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>         
+        </article>
+
+        <article class="qna">
+         <div class="questions">
+            <label for="arrow-btn">How do I reset my password?</label>
+            <button class="down-arrow-btn" id="arrow-btn"> <img  src="images/icon-arrow-down.svg" alt="down arrow icon"> </button>
+          </div>
+          <div class="answer">
+            <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>                   
+        </article>
+
+        <article class="qna">
+         <div class="questions">
+            <label for="arrow-btn">Can I cancel my subscription?</label>
+            <button class="down-arrow-btn" id="arrow-btn"> <img  src="images/icon-arrow-down.svg" alt="down arrow icon"> </button>
+          </div>
+          <div class="answer">
+            <p> Yes! Send us a message and we'll process your request no questions asked.</p>
+          </div>         
+        </article>
+       
+        <article class="qna">
+         <div class="questions">
+            <label for="arrow-btn">Do you provide additional support?</label>
+            <button class="down-arrow-btn" id="arrow-btn"> <img  src="images/icon-arrow-down.svg" alt="down arrow icon"> </button>
+          </div>
+          <div class="answer">
+            <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.    </p>
+          </div>         
+        </article>
+
+      </div>
+    </div>
+     
+  </main>
+ 
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Girish Chandra Banua</a>.
+  </footer>
+  <script src="java_script.js"></script>
+</body>
+</html>

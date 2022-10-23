@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+:root {
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%)    ;
+}
+body {
+    background: linear-gradient(var(--Soft-violet),var(--Soft-blue)) no-repeat center;        
+    background-size: cover; 
+}
+.container {
+    margin: 40% 5% 10%;
+    padding: 5%;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);    
+}
+.illustration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -43%;
+}
+.ilstrtn2 {
+    margin-top: -30%;
+}
+h1 { 
+    text-align: center;
+    margin: 5% 0 10% 0;
+}
+article {
+    font-size: 12px;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    color: var(--Very-dark-grayish-blue);    
+}
+p{
+    line-height: 1.5;
+    margin: 5% 10% 5% 0;
+    color: var(--Dark-grayish-blue);    
+    font-size: 13px;
+}
+article:hover {
+   color: var(--Soft-red);
+}
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.questions button {
+    padding: 2px 5px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    transition: transform 0.5s ease-in-out;
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+.qna.active .questions {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+.qna.active .answer {
+    max-height: 100px;
+}
+
+.qna.active button {
+    transform: rotate(180deg);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+     margin: 25%; }
+.attribution a { color: hsl(228, 100%, 79%); }
+
+@media screen and (min-width: 650px) {
+    
+    .container {
+        margin: 10% 25% 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;             
+        overflow: hidden;
+    }
+    .illustration {
+        margin: auto 0 auto -12%;       
+        display: block;
+    }  
+    .ilstrtn2 {
+      display: none;
+    }
+    .questions-answers {
+        flex-basis: 50%;         
+        padding: 25px;     
+        margin: auto 25px;            
+    }
+    h1 { text-align: left;}
+    .questions {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+        margin: 10px 0 0 ;
+    }
+    .attribution {
+        margin: 100px auto 100px;
+    } 
+}
